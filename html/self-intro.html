@@ -7,6 +7,9 @@
         .self-intro {
             line-height: 1.5;
         }
+        .self-intro-message {
+            line-height: 0.5;
+        }
         table {
             table-layout: fixed;
             border-collapse: collapse;
@@ -15,93 +18,130 @@
         th, td {
             border: 1px solid black;
             padding: 8px;
-            text-align: left;
+            text-align: center;
             word-wrap: break-word;
+        }
+        td:first-child {
+            width: 5%;
+        }
+        td:nth-child(2) {
+            width: 10%;
+        }
+        td:nth-child(3) {
+            width: 15%;
+        }
+        td:nth-child(5) {
+            width: 10%;
         }
    </style>
 </head>
 <body>
-   <div class="self-intro">
-   <h1>자기소개</h1> 
-   <ul>
-        <li>이름 : 카고</li>
-        <li>사는 곳 : 성남</li>
-        <li>안녕하세요 저는 카고입니다. 만나서 반갑습니다.</li>
-   </ul>
-   </div> 
-   <hr>
-   <div class="movie">
-   <h1>인생 영화 BEST5</h1>
-   <table border='1'>
-        <tr>
-            <td>순위</td>
-            <td>제목</td>
-            <td>포스터</td>
-            <td>줄거리</td>
-            <td>바로가기</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>어바웃타임</td>
-            <td><img src="./about-time2.jpg" width="100" height="100"></td>
-            <td>시간을 되돌릴 수 있는 한 남자의 사랑 이야기</td>
-            <td><a href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&ssc=tab.nx.all&query=어바웃타임&oquery=테이큰1&tqi=iPftKwqVN8wssUuxn40ssssstCG-308187">
-                클릭</a>
-            </td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>테이큰1</td>
-            <td><img src="./taken.jpg" width="100" height="100"></td>
-            <td>딸을 되찾기 위한 지구 최강 아버지</td>
-            <td><a href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&ssc=tab.nx.all&query=테이큰1&oquery=테이큰&tqi=iPftKsqVN8ossgxxXT8ssssstnd-370043">
-                클릭</a>
-            </td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>쇼생크탈출</td>
-            <td><img src="./escape.jpeg" width="100" height="100"></td>
-            <td>교도소 탈출</td>
-            <td><a href="https://m.search.naver.com/search.naver?sm=mtp_sug.top&where=m&query=쇼생크+탈출&acq=쇼생&acr=1&qdt=0">
-                클릭</a>
-            </td>
-        </tr>
-            <td>4</td>
-            <td>악마를 보았다</td>
-            <td><img src="./devil.jpeg" width="100" height="100"></td>
-            <td>연쇄살인범에 대한 복수</td>
-            <td><a href="https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&ssc=tab.m.all&oquery=쇼생크+탈출&tqi=iPfuLspr46ZssPcxWlhssssstOh-174506&query=악마를보았다">
-                클릭</a>
-            </td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>인셉션</td>
-            <td><img src="./inception.jpg" width="100" height="100"></td>
-            <td>타인의 꿈에 잠입하여 생각을 훔친다.</td>
-            <td><a href="https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&ssc=tab.m.all&oquery=악마를보았다&tqi=iPfuNlprfAlssk4SZ%2BKssssstkZ-110527&query=인셉션">
-                클릭</a>
-            </td>
-        </tr>
-   </table>
-   </div>
-   <hr>
-   <div class="guest-book">
-   <h1>방명록</h1>
-   <p>이름: <input type="text" name="name"></p>
-   <p>본인 취향 영화</p>
-   <p>
-        <input type="checkbox"> 어바웃 타임
-        <input type="checkbox"> 테이큰1
-        <input type="checkbox"> 쇼생크탈출
-        <input type="checkbox"> 악마를 보았다
-        <input type="checkbox"> 인셉션
-    </p>
-    <p>
-        <button type="button" id="change">등록</button>
-        <button type="button" id="change">취소</button>
-    </p>
+    <div class="self-intro">
+        <h1>자기소개</h1> 
+        <img src="../images/sole.GIF">
+        <p>
+            <ul>
+                <li>이름 : 카고</li>
+                <li>사는 곳 : 성남</li>
+                <li>
+                    <div class="self-intro-message">
+                        <p>안녕하세요 저는 카고입니다.</p> 
+                        <p>오랜만에 제가 좋아했던 영화가 뭐가 있었는지 떠올려보는 시간을 가졌는데요.</p>
+                        <p>이렇게 적고보니 전부 한 번씩 다시 보고 싶네요 ^.^</p>
+                    </div>
+                </li>
+            </ul>
+        </p>
+    </div> 
+    <hr>
+    <div class="movie">
+        <h1>인생 영화 BEST5</h1>
+        <table border='1'>
+            <tr>
+                <td>순위</td>
+                <td>제목</td>
+                <td>포스터</td>
+                <td>줄거리</td>
+                <td>바로가기</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>어바웃타임</td>
+                <td><img src="../images/about-time.jpg" width="100" height="100"></td>
+                <td>시간을 되돌릴 수 있는 한 남자의 사랑 이야기</td>
+                <td><a href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&ssc=tab.nx.all&query=어바웃타임&oquery=테이큰1&tqi=iPftKwqVN8wssUuxn40ssssstCG-308187">
+                    클릭</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>테이큰1</td>
+                <td><img src="../images/taken.jpg" width="100" height="100"></td>
+                <td>딸을 되찾기 위한 지구 최강 아버지</td>
+                <td><a href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&ssc=tab.nx.all&query=테이큰1&oquery=테이큰&tqi=iPftKsqVN8ossgxxXT8ssssstnd-370043">
+                    클릭</a>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>쇼생크탈출</td>
+                <td><img src="../images/escape.jpeg" width="100" height="100"></td>
+                <td>교도소 탈출</td>
+                <td><a href="https://m.search.naver.com/search.naver?sm=mtp_sug.top&where=m&query=쇼생크+탈출&acq=쇼생&acr=1&qdt=0">
+                    클릭</a>
+                </td>
+            </tr>
+                <td>4</td>
+                <td>악마를 보았다</td>
+                <td><img src="../images/devil.jpeg" width="100" height="100"></td>
+                <td>연쇄살인범에 대한 복수</td>
+                <td><a href="https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&ssc=tab.m.all&oquery=쇼생크+탈출&tqi=iPfuLspr46ZssPcxWlhssssstOh-174506&query=악마를보았다">
+                    클릭</a>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>인셉션</td>
+                <td><img src="../images/inception.jpg" width="100" height="100"></td>
+                <td>타인의 꿈에 잠입하여 생각을 훔친다.</td>
+                <td><a href="https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&ssc=tab.m.all&oquery=악마를보았다&tqi=iPfuNlprfAlssk4SZ%2BKssssstkZ-110527&query=인셉션">
+                    클릭</a>
+                </td>
+            </tr>
+        </table>
     </div>
+    <hr>
+    <div class="guest-book">
+        <form id="guestBookForm">
+            <h1>방명록</h1>
+            <p>이름: <input type="text" id="name"></p>
+            <p>본인 취향 영화</p>
+            <p>
+                <input type="checkbox" name="movies"> 어바웃 타임
+                <input type="checkbox" name="movies"> 테이큰1
+                <input type="checkbox" name="movies"> 쇼생크탈출
+                <input type="checkbox" name="movies"> 악마를 보았다
+                <input type="checkbox" name="movies"> 인셉션
+            </p>
+            <p>
+                <button type="button" id="register">등록</button>
+                <button type="reset" id="reset">취소</button>
+            </p>
+        </form>
+    </div>
+    <script>
+        const register = document.getElementById("register");
+        register.addEventListener('click', function() {
+            let likeCount = 0;
+            const checkboxes = document.getElementsByName("movies");
+            for (let i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].checked) {
+                    likeCount += 1;
+                }
+            }
+            const name = document.getElementById("name").value;
+            alert(name + "님, 저와 "+ likeCount + "개의 취향이 같으시네요!");
+        });
+    </script>
 </body>
 </html>
